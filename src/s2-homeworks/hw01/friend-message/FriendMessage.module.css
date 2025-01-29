@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid red;
     margin-bottom: 30px;
 
 
@@ -24,48 +23,45 @@
     width: 48px;
     height: 48px;
     margin-bottom: 5px;
+    margin-right: 13px;
 }
 
 .friendText {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    height: auto;
     position: relative;
-    width: 100%;
-    height: 77px;
-    padding: 10px 0;
+    display: inline-block;
+    max-width: 527px;
+    padding: 8px 13px;
+    background-color: #f5f7fb;
+    filter: drop-shadow(0 1px 2px rgba(29, 33, 38, 0.1))
+    drop-shadow(0 5px 20px rgba(29, 33, 38, 0.03));
+    color: white;
+    border-radius: 10px;
 
 }
 
 .friendText:after {
-    position: absolute;
     content: '';
-    display: block;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 4px;
-    left: -20px;
+    position: absolute;
+    z-index: -9999999999;
     bottom: 0;
-    right: 0;
-    mask-image: url('../../../assets/img/messageRectangle.svg');
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-position: top;
-    transform: rotateY(180deg);
-    background-color:  #f5f7fb;
-    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #f5f7fb;
+
+    /*border-radius: 50% 0;*/
+    /*transform: rotate(-135deg)*/
 }
 
 .friendName {
-    margin-left: 27px;
     font-weight: 600;
     font-size: 16px;
     color: #000;
 }
 
 .friendMessageText {
-    margin-left: 27px;
     font-weight: 400;
     font-size: 16px;
     color: #000;
