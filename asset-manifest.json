@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/home-work-2-main/static/css/main.6125eeb9.css",
+    "main.css": "/home-work-2-main/static/css/main.b9caa95d.css",
     "main.js": "/home-work-2-main/static/js/main.56fb2628.js",
     "static/js/787.66cb4309.chunk.js": "/home-work-2-main/static/js/787.66cb4309.chunk.js",
+    "static/media/Montserrat-SemiBold.ttf": "/home-work-2-main/static/media/Montserrat-SemiBold.38e62f01be69b2e02e29.ttf",
+    "static/media/Montserrat-Regular.ttf": "/home-work-2-main/static/media/Montserrat-Regular.cfbf0da06d33097e6d0a.ttf",
+    "static/media/Montserrat-Medium.ttf": "/home-work-2-main/static/media/Montserrat-Medium.d3f3d769c2fc1af5c0b4.ttf",
+    "static/media/Montserrat-SemiBold.woff": "/home-work-2-main/static/media/Montserrat-SemiBold.b965d8008bf5a046eaca.woff",
+    "static/media/Montserrat-Medium.woff": "/home-work-2-main/static/media/Montserrat-Medium.5185839c1e34245e4c63.woff",
+    "static/media/Montserrat-Regular.woff": "/home-work-2-main/static/media/Montserrat-Regular.8ac4ba8ccac56fd72129.woff",
     "static/media/avatar.png": "/home-work-2-main/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/home-work-2-main/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/home-work-2-main/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/checked.svg": "/home-work-2-main/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/home-work-2-main/index.html",
     "static/media/burger.svg": "/home-work-2-main/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.6125eeb9.css.map": "/home-work-2-main/static/css/main.6125eeb9.css.map",
+    "main.b9caa95d.css.map": "/home-work-2-main/static/css/main.b9caa95d.css.map",
     "main.56fb2628.js.map": "/home-work-2-main/static/js/main.56fb2628.js.map",
     "787.66cb4309.chunk.js.map": "/home-work-2-main/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6125eeb9.css",
+    "static/css/main.b9caa95d.css",
     "static/js/main.56fb2628.js"
   ]
 }
