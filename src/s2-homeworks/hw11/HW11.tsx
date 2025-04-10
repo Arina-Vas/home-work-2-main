@@ -22,8 +22,8 @@ function HW11() {
             setValue1(value)
             return
         }
-        setValue1(value[0])
-        setValue2(value[1])
+        setValue1(Math.min(...value))
+        setValue2(Math.max(...value))
     }
 
     return (
