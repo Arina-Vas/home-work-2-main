@@ -11,6 +11,8 @@ import {type} from "node:os";
 * 3 - сделать стили в соответствии с дизайном
 * */
 
+const minDistance = 10
+
 function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
@@ -22,8 +24,8 @@ function HW11() {
             setValue1(value)
             return
         }
-        setValue1(Math.min(...value))
-        setValue2(Math.max(...value))
+        setValue1(Math.min(value[0], value[1] - minDistance));
+        setValue2(Math.max(value[1], value[0] + minDistance));
     }
 
     return (
