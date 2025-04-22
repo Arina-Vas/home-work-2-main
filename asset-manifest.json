@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/home-work-2-main/static/css/main.b35a5316.css",
+    "main.css": "/home-work-2-main/static/css/main.a0c656ea.css",
     "main.js": "/home-work-2-main/static/js/main.d92dbfbe.js",
     "static/js/787.66cb4309.chunk.js": "/home-work-2-main/static/js/787.66cb4309.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/home-work-2-main/static/media/Montserrat-SemiBold.38e62f01be69b2e02e29.ttf",
@@ -16,12 +16,12 @@
     "static/media/checked.svg": "/home-work-2-main/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/home-work-2-main/index.html",
     "static/media/burger.svg": "/home-work-2-main/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.b35a5316.css.map": "/home-work-2-main/static/css/main.b35a5316.css.map",
+    "main.a0c656ea.css.map": "/home-work-2-main/static/css/main.a0c656ea.css.map",
     "main.d92dbfbe.js.map": "/home-work-2-main/static/js/main.d92dbfbe.js.map",
     "787.66cb4309.chunk.js.map": "/home-work-2-main/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b35a5316.css",
+    "static/css/main.a0c656ea.css",
     "static/js/main.d92dbfbe.js"
   ]
 }
