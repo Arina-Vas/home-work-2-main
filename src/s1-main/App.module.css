@@ -51,6 +51,6 @@
 .hwTitle {
     font-weight: 600;
     font-size: 22px;
-    color: #000;
+    color: var(--color);
     margin-bottom: 10px;
 }
