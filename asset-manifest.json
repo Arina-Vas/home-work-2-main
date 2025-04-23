@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home-work-2-main/static/css/main.a0c656ea.css",
-    "main.js": "/home-work-2-main/static/js/main.d92dbfbe.js",
+    "main.js": "/home-work-2-main/static/js/main.44f6c30f.js",
     "static/js/787.66cb4309.chunk.js": "/home-work-2-main/static/js/787.66cb4309.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/home-work-2-main/static/media/Montserrat-SemiBold.38e62f01be69b2e02e29.ttf",
     "static/media/Montserrat-Regular.ttf": "/home-work-2-main/static/media/Montserrat-Regular.cfbf0da06d33097e6d0a.ttf",
@@ -10,6 +10,10 @@
     "static/media/Montserrat-Medium.woff": "/home-work-2-main/static/media/Montserrat-Medium.5185839c1e34245e4c63.woff",
     "static/media/Montserrat-Regular.woff": "/home-work-2-main/static/media/Montserrat-Regular.8ac4ba8ccac56fd72129.woff",
     "static/media/avatar.png": "/home-work-2-main/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/200.svg": "/home-work-2-main/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
+    "static/media/error.svg": "/home-work-2-main/static/media/error.5a3135f381b00b53044eff200e725391.svg",
+    "static/media/500.svg": "/home-work-2-main/static/media/500.adbc5f265f6f3c1fb9c5633ffe365afa.svg",
+    "static/media/400.svg": "/home-work-2-main/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/404.svg": "/home-work-2-main/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/home-work-2-main/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/home-work-2-main/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
@@ -17,11 +21,11 @@
     "index.html": "/home-work-2-main/index.html",
     "static/media/burger.svg": "/home-work-2-main/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.a0c656ea.css.map": "/home-work-2-main/static/css/main.a0c656ea.css.map",
-    "main.d92dbfbe.js.map": "/home-work-2-main/static/js/main.d92dbfbe.js.map",
+    "main.44f6c30f.js.map": "/home-work-2-main/static/js/main.44f6c30f.js.map",
     "787.66cb4309.chunk.js.map": "/home-work-2-main/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0c656ea.css",
-    "static/js/main.d92dbfbe.js"
+    "static/js/main.44f6c30f.js"
   ]
 }
