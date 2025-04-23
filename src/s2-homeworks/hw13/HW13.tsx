@@ -2,17 +2,26 @@ import React, {useState} from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW13.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
-import axios from 'axios'
+import axios, {AxiosError} from 'axios'
 import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
+import stand from "../hw04/Stand";
 
 /*
 * 1 - дописать функцию send
 * 2 - дизэйблить кнопки пока идёт запрос
 * 3 - сделать стили в соответствии с дизайном
 * */
+
+const imageErrorName = (status: number) => {
+    switch (status) {
+        case 400: return error400
+        case 500: return error500
+        default : return errorUnknown
+    }
+}
 
 const HW13 = () => {
     const [code, setCode] = useState('')
@@ -37,13 +46,32 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-
+                setText(res.data.errorText)
+                setInfo(res.data.info)
+                console.log(res)
             })
-            .catch((e) => {
+            .catch((e:AxiosError<{errorText: string, info: string}>) => {
+                if(e.response) {
+                    setCode(e.response?.status ? `Ошибка ${e.response?.status}!` : 'Error!')
+                    setImage(imageErrorName(e.response?.status || 0))
+                    setText(e.response?.data?.errorText || e.message)
+                    setInfo(e.response?.data?.info || e.name)
+                }
+                else {
+                    setCode('Error!')
+                    setImage(imageErrorName(0))
+                    setText(e.message)
+                    setInfo(e.name)
+                }
+                console.log(e)
+
+
                 // дописать
 
             })
     }
+
+    const isDisabled = info === '...loading'
 
     return (
         <div id={'hw13'}>
@@ -55,6 +83,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
+                        disabled={isDisabled}
                         // дописать
 
                     >
@@ -64,6 +93,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
+                        disabled={isDisabled}
                         // дописать
 
                     >
@@ -73,6 +103,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
+                        disabled={isDisabled}
                         // дописать
 
                     >
@@ -82,6 +113,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
+                        disabled={isDisabled}
                         // дописать
 
                     >
