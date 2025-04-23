@@ -51,18 +51,10 @@ const HW13 = () => {
                 console.log(res)
             })
             .catch((e:AxiosError<{errorText: string, info: string}>) => {
-                if(e.response) {
                     setCode(e.response?.status ? `Ошибка ${e.response?.status}!` : 'Error!')
                     setImage(imageErrorName(e.response?.status || 0))
                     setText(e.response?.data?.errorText || e.message)
                     setInfo(e.response?.data?.info || e.name)
-                }
-                else {
-                    setCode('Error!')
-                    setImage(imageErrorName(0))
-                    setText(e.message)
-                    setInfo(e.name)
-                }
                 console.log(e)
 
 
