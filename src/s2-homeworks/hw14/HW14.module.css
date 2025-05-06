@@ -1,7 +1,16 @@
 .tech {
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
 }
 
 .loading {
-
+    margin-top: 10px;
+    display: inline-block;
+    text-align: end;
+    max-width: 372px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4d4d4d;
 }
