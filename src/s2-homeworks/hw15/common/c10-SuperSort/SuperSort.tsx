@@ -1,13 +1,13 @@
 import React from 'react'
 import down from '../../../../assets/img/hw15/Polygon3.png'
 import up from '../../../../assets/img/hw15/Polygon4.png'
+import s from '../../HW15.module.css'
 
 
 // добавить в проект иконки и импортировать
-const downIcon = down
-const upIcon = up
-const noneIcon =  [down,up]
-
+const downIcon = {dir: "down", src: down}
+const upIcon = {dir: "up", src: up}
+const noneIcon = [upIcon, downIcon]
 
 
 export type SuperSortPropsType = {
@@ -15,6 +15,7 @@ export type SuperSortPropsType = {
     sort: string
     value: string
     onChange: (newSort: string) => void
+    name: string
 }
 
 export const pureChange = (sort: string, down: string, up: string) => {
@@ -27,7 +28,7 @@ export const pureChange = (sort: string, down: string, up: string) => {
 
 const SuperSort: React.FC<SuperSortPropsType> = (
     {
-        sort, value, onChange, id = 'hw15',
+        sort, value, onChange, id = 'hw15', name
     }
 ) => {
     const up = '0' + value
@@ -48,19 +49,25 @@ const SuperSort: React.FC<SuperSortPropsType> = (
         <span
             id={id + '-sort-' + value}
             onClick={onChangeCallback}
+            style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}
         >
+            {name}
             {/*сделать иконку*/}
+            <div className={s.iconBox} style={{
+
+            }}>
             {Array.isArray(icon) ?
                 icon.map((icon, i) => (
-                    <img key={i} src={icon} alt={`sort-${i}`}/>
+                    <img className={`s.${icon.dir}`} key={i} src={icon.src} alt={`sort-${i}`}/>
                 )) :
                 <img
+                    className={`s.${icon.dir}`}
                     alt={'sort'}
                     id={id + '-icon-' + sort}
-                    src={icon}
+                    src={icon.src}
                 />
             }
-
+ </div>
 
             {/*{icon} /!*а это убрать*!/*/}
         </span>

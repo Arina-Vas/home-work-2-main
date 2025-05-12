@@ -40,6 +40,7 @@
 .hw {
     /*width: 100%;*/
     display: flex;
+    position: relative;
     flex-direction: column;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;

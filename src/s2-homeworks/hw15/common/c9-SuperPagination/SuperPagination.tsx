@@ -23,8 +23,8 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         // пишет студент
     }
 
-    const onChangeSelect = (option: any) => {
-        // const count = +event.currentTarget.value;
+    const onChangeSelect = (option:number ) => {
+        console.log(option)
         onChange(page, option)
     }
 
@@ -32,9 +32,10 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
-                sx={{
-                    // стили для Pagination // пишет студент
-                }}
+                sx={{display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                    // стили для Pagination // пишет студент\
+                color="primary"
+                shape="rounded"
                 page={page}
                 count={lastPage}
                 onChange={onChangeCallback}
